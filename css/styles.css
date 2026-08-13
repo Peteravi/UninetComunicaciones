@@ -42,3 +42,19 @@ footer{padding-top:78px}.footer-grid{grid-template-columns:1.7fr .8fr 1fr;gap:cl
 @media(max-width:900px){.header{height:78px;background:#07152deb}.header.scrolled{height:72px}.header .logo-mark,.header.scrolled .logo-mark{width:50px;height:50px}.header .brand{font-size:17px}.header .brand b{font-size:10px}.nav.active{top:72px;height:calc(100dvh - 72px);overflow-y:auto}.nav.active a{font-size:18px;padding:18px 16px}.footer-grid{grid-template-columns:1.4fr 1fr 1fr}.footer-grid p,.footer-grid a{font-size:13px}}
 @media(max-width:650px){footer{padding-top:58px}.footer-grid{grid-template-columns:1fr;gap:34px}.footer-brand{font-size:20px}.footer-brand .logo-mark{width:62px;height:62px}.footer-grid>div>strong{font-size:15px}.footer-grid p,.footer-grid a{font-size:14px}.copyright{font-size:12px}.header .brand{gap:10px;font-size:15px}.header .brand b{font-size:9px;letter-spacing:1.2px}.header .logo-mark,.header.scrolled .logo-mark{width:46px;height:46px}}
 @media(max-width:390px){.header .brand{font-size:13px}.header .brand b{font-size:8px;letter-spacing:.8px}.header .logo-mark,.header.scrolled .logo-mark{width:42px;height:42px}.footer-brand{font-size:18px}.footer-brand .logo-mark{width:58px;height:58px}}
+
+/* Two-service layout: Internet and video */
+.service-grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.service-card:last-child{grid-column:auto}}
+@media(max-width:600px){.service-grid{grid-template-columns:1fr}}
+
+/* Unified service cards */
+.service-grid{align-items:stretch}
+.service-card,.service-card.featured{min-height:0;height:100%;background:var(--ink);color:#fff;border-color:var(--ink)}
+.service-image{height:auto;aspect-ratio:16/9;background:#0c203d}
+.service-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.service-content,.featured .service-content{min-height:250px;background:var(--ink)}
+.service-card h3{color:#fff}
+.service-card p,.featured p{color:#aeb9c9}
+.service-card a,.featured a{color:#57b1ff}
+@media(max-width:600px){.service-content,.featured .service-content{min-height:230px}}
